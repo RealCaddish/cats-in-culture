@@ -2,7 +2,7 @@
 
 ***What?***
 
-I’m creating a map that traces the history of domestic cats over time. By looking at the earliest examples of cats living alongside humans to their introduction to the Americas, I hope to paint a cultural portrait of the domestication process as well as the cultural affinities and attitudes towards cats over time. By tracing the domestic cat through Cyprus, Egypt, Kazakhstan, and Eurasia, I hope to create an interesting story map that showcases various points in history and how they intersect with attitudes towards cats. I’m planning to utilize a UI slider that can be moved forward and backward to trace these periods over time as well as points on a map that show various archaeological sites where cats are found or created via artwork. 
+I’m creating a map that traces the history of domestic cats over time. By looking at the earliest examples of cats living alongside humans in Cyprus during the Neolithic Period, to their introduction to the Americas, I hope to paint a cultural portrait of the domestication process as well as the cultural affinities and attitudes towards cats over time. By tracing the domestic cat through Cyprus, Egypt, Kazakhstan, and Eurasia, I hope to create an interesting story map that showcases various points in history and how they intersect with attitudes towards cats. I’m planning to utilize a UI slider that can be moved forward and backward to trace these periods over time as well as points on a map that show various archaeological sites where cats are found or created via artwork. 
 
 ***Where?*** 
 
