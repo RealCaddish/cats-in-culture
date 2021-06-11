@@ -21,83 +21,46 @@
   });
   tiles.addTo(map);
 
-  // omnivore.csv('data/cats_sites.csv')
-  // .on('ready', function (e) {
-  //   drawMap(e.target.toGeoJSON());
-  // })
-  // .on('error', function (e) {
-  //   console.log(e.error[0].message);
-  // });
-
-  // data call for archaeological site points 
-
   $.getJSON("../data/cat_sites.geojson", function (data) {
 
     console.log(data)
-
     drawMap(data);
   });
 
   // data call for territories polygons 
-  var territories1 = $.getJSON("../data/territories_joined.geojson", function (data1) {
+  var territories1 = $.getJSON("../data/territories_joined.geojson", function (data) {
 
-    drawMap(data1)
+    console.log(data)
+    drawMap(data)
   });
 
+  // draw the map 
   function drawMap(data) {
+
+    var archSitesStyle = {
+      radius: 8,
+      fillColor: "#ff7800",
+      color: "#000",
+      weight: 1,
+      opacity: 1,
+      fillOpacity: 0.8
+    };
+
     const archCatSite = L.geoJson(data, {
-
-      style: function (feature) {
-        return {
-          color: '#20282e',
-          weight: 2,
-          fillOpacity: 1,
-          fillColor: '#1f78b4'
-        };
-
-      },
-      // add hover and touch functionality to each feature layer
-
-      onEachFeature: function (feature, layer) {
-
-        //when mousing over a layer 
-        layer.on('mouseover', function () {
-          //change stroke color and bring element to front
-          layer.setStyle({
-            color: '#ff6e02'
-          }).bringToFront();
-        });
-
-        // mouse off the layer to reset 
-        layer.on('mouseout', function () {
-          //reset style 
-          layer.setStyle({
-            color: '#20282e'
-          });
-        });
-      },
+      pointToLayer: function (feature, latlng) {
+        return L.circleMarker(latlng, archSitesStyle);
+      }
     }).addTo(map)
     map.fitBounds(archCatSite.getBounds(), {
       padding: [18, 18] // add padding around the archaeological sites
     });
 
-    const territories = L.geoJson(data1, {
-
-      style: function (feature) {
-        return {
-          color: '#20282e',
-          weight: 2,
-          fillOpacity: 1,
-          fillColor: '#1f78b4'
-        };
-
-      },
-
+    const territories = L.geoJson(data, {
       // add hover and touch functionality to each feature layer
 
       onEachFeature: function (feature, layer) {
 
-        console.log(layer)
+        //console.log(layer)
         //when mousing over a layer 
         layer.on('mouseover', function () {
           //change stroke color and bring element to front
@@ -120,7 +83,25 @@
     });
 
 
+    //Leaflet control for title 
+    L.Control.title = L.Control.extend({
+      onAdd: function(map) {
+        var title = L.DomUtil.create('div');
+        title.id = "title";
+        text.innerHTML = "<strong> Cats in Culture </strong>"
+        return title
+      },
+      onRemove: function(map) {
+
+        // nothing to do here
+      }
+
+    });
+    L.Control.title = function(opts) {
+
+      return new L.Control.title(opts);
+    }
+
+    L.control.title({position: 'bottomleft'}).addTo(map); 
   }
-
-
 })();
