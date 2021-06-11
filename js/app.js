@@ -39,10 +39,10 @@
   });
 
   // data call for territories polygons 
-  // var territories1 = $.getJSON("../data/territories.geojson", function (data1) {
+  var territories1 = $.getJSON("../data/territories_joined.geojson", function (data1) {
 
-  //drawMap(data1)
-  // }); 
+    drawMap(data1)
+  });
 
   function drawMap(data) {
     const archCatSite = L.geoJson(data, {
@@ -54,7 +54,7 @@
           fillOpacity: 1,
           fillColor: '#1f78b4'
         };
-      
+
       },
       // add hover and touch functionality to each feature layer
 
@@ -90,9 +90,9 @@
           fillOpacity: 1,
           fillColor: '#1f78b4'
         };
-      
+
       },
-      
+
       // add hover and touch functionality to each feature layer
 
       onEachFeature: function (feature, layer) {
