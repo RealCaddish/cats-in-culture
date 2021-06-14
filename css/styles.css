@@ -1,3 +1,14 @@
+
+
+html, body {
+  height: 100% 
+}
+
+
+.container-primary {
+  height: 100%; 
+}
+
 h1 {
   position: absolute;
   z-index: 650;
@@ -8,9 +19,13 @@ h1 {
   color: #330606cc;
   text-shadow: 2px 1px #fff3f3;
   text-decoration: underline;
-  font-size: 1.9em;
+  font-size: 1.5em;
   background: rgba(187, 183, 183, 0.795);
   border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
 }
 
 
@@ -23,8 +38,18 @@ h1 {
   bottom: 0;
 }
 
-;
+.my-custom-row {
+  background-color: bisque;
+  height: 100%; 
+} 
 
+.historyBox {
+  background-color: rgb(120, 120, 161);
+  text-align: center;
+  width: 30%;
+  height: 30%;
+  margin: 5px;
+}
 
 
 #title {
@@ -33,7 +58,11 @@ h1 {
 
 }
 
-.btn {
-  background-color: green;
+.btn-primary {
+  background-color: rgb(58, 43, 20);
+  ;
+}
 
+.btn-secondary {
+  background-color: peru;
 }

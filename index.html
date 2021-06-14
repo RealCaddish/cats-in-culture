@@ -4,41 +4,76 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-
   <!-- Load Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
   <!-- Load Leaflet CSS  -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
     crossorigin="" />
-
-
   <!-- Load css file -->
   <link href="css/styles.css" rel="stylesheet" />
-
-
   <!--Load archeologicaps font -->
   <!-- <link rel="preload" href="Archeologicaps.woff2" as="font" type="font/woff2" crossorigin> -->
 </head>
 
 <body>
-  <h1> Cats in Culture: A Geographic & Archaeological Story of Humanity and Cats Through Time</h1>
 
-  <div id="map" class='viewport-twothirds viewport-full-ml'>
 
-    <button type="button" class='btn btn-primary'> Backward </button>
-    <button type="button" class='btn btn-secondary'> Forward </button>
+  <!--Modal build -->
+  <div class="container-fluid container-primary">
+    <div class="row my-custom-row">
+
+      <div class="col-sm-9">
+        <div class="historyBox bg-white round px12 py12 relative border">
+          <h2 class='text-bold mb12 w180'></h2>
+        </div>
+        <div class="p-2 border bg-light">Col One</div>
+        <h1> Cats in Culture: A Geographic & Archaeological Story of Humanity and Cats Through Time</h1>
+
+        <div id="map" class='viewport-twothirds viewport-full-ml'></div>
+      </div>
+
+      <div class="col-sm-3 text-center">
+        <div class="p-2 border bg-light">
+          <h2> Title </h2>
+        </div>
+
+        <button type="button" class='btn btn-primary'> Backward </button>
+        <button type="button" class='btn btn-secondary'> Forward </button>
+      </div>
+
+      <div class="modal fade" id="archModal">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal content">
+            <div class="modal-header">
+              <h1> Title </h1>
+            </div>
+            <div class="modal-body">
+              This is the body
+            </div>
+            <div class="modal-footer">
+              <input class="btn btn-default" value="Close">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <a href="#" data-toggle="modal" data-target="#archModal"> Open Modal</a>
+  </div>
   </div>
 
+
+  <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
+  <!--Popper CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>
+  <!--Bootstrap CDN-->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
