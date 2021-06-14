@@ -19,7 +19,7 @@
         "Image File Path": "images\/shillourokambosCat.jpg",
         "Image File Path 2": "images\/shillourokambosCat2.jpg",
         "Date": "7,500 BCE ",
-        "ID": null
+        "ID": 15
       },
       "geometry": {
         "type": "Point",
@@ -40,7 +40,7 @@
         "Image File Path": "images\/klimonas.jpg",
         "Image File Path 2": null,
         "Date": "9,000 - 8,400 BCE",
-        "ID": null
+        "ID": 15
       },
       "geometry": {
         "type": "Point",
