@@ -29,7 +29,7 @@
   // data call for the archaeological sites 
   $.getJSON("../data/cat_sites.geojson", function (data) {
     
-    console.log(data)
+    console.log
 
     // access the features 
 
@@ -65,7 +65,7 @@
   });
 
   // data call for territories polygons 
-  $.getJSON("../data/territories_joined.geojson", function (data) {
+  $.getJSON("../data/territories_joined2.geojson", function (data) {
 
     console.log(data)
     drawMap(data)
