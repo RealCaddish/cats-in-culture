@@ -24,7 +24,7 @@
 
   // new function - make slide
 
-  makeSlide(15)
+  makeSlide(1)
 
   function makeSlide(slideNum) {
 
