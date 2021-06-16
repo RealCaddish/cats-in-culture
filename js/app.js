@@ -3,7 +3,6 @@
   // map options
   const options = {
     center: [35.852, 21.443],
-    zoom: 7,
     scrollWheelZoom: true,
     zoomSnap: .1,
     dragging: true,
@@ -11,12 +10,15 @@
   }
 
   // Leaflet map creation
-  const map = L.map('map', options);
+  const map = L.map('map', options)
+
 
   // replace zoom control to bottom left 
   L.control.zoom({
     position: 'bottomleft'
   }).addTo(map)
+
+  
 
   // add basemap tiles layer 
   const tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
@@ -25,12 +27,15 @@
   });
   tiles.addTo(map);
 
-  // new function - make slide
-  makeSlide(15)
+
+  const slide = 22; 
+
+  // // new function - make slide
+  makeSlide(slide)
 
   function makeSlide(slideNum) {
   // data call for territories polygons 
-  const ter = $.getJSON("../data/territories_joined2.geojson", 
+  const ter = $.getJSON("../data/territories_joined2.json", 
   function (data) {
 
     L.geoJson(data, {
@@ -61,7 +66,7 @@
     // adding data as points to Leaflet map
     L.geoJson(data, {
       filter: function (feature) {
-        if (slideNum == feature.properties.ID) {
+        if (slideNum == feature.properties.Slide_ID) {
           return feature
         }
       },
@@ -71,10 +76,12 @@
     }).addTo(map)
   })
 
-  const zoom = 10
   $.getJSON("../data/cat_slides.geojson", function (data) {
+
+    console.log(data)
     for (const x of data.features) {
       if (slideNum == x.properties.Slide) {
+        const zoom = x.properties.Zoom
         console.log(x.properties)
         console.log([x.properties.Lat, x.properties.Lon])
         map.setView([x.properties.Lat, x.properties.Lon], zoom)
@@ -98,6 +105,11 @@
 //   return controls
 // }
 // storyControl.addTo(map)
-};
+
+  }
+
+
+// iterate through slides 
+
 
 })();

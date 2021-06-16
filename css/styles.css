@@ -46,9 +46,8 @@ h2 {
 .historyBox {
   background-color: rgb(120, 120, 161);
   text-align: center;
-  width: 30%;
-  height: 30%;
-  margin: 5px;
+  width: 100%;
+  height: 80%;
 }
 
 
