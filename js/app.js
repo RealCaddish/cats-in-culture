@@ -143,9 +143,6 @@
     $.getJSON("../data/cat_sites.geojson", function (data) {
 
       // access the features 
-      var archSlide = data.features
-
-      console.log(archSlide)
 
       const archSitesStyle = {
         radius: 8,
@@ -175,19 +172,19 @@
           const zoom = x.properties.Zoom // zoom function dynamically updates scale based on this value
           console.log(x.properties)
           console.log([x.properties.Lat, x.properties.Lon])
-          map.setView([x.properties.Lat, x.properties.Lon], zoom)
+          map.setView([x.properties.Lat, x.properties.Lon], zoom);
 
-          const historyText = x.properties.Description
+          // grab the Description values
+          const historyText = x.properties.Description;
 
-          console.log(historyText)
-          document.querySelector(".historyBox").innerHTML = historyText
-          console.log(historyText)
+          // insert them into the historyBox div element
+          document.querySelector(".historyBox").innerHTML = historyText;
 
-          const historyTitle = x.properties.Title
+          // grab the Title values 
+          const historyTitle = x.properties.Title;
 
-          document.querySelector("h2").innerHTML = historyTitle
-
-          console.log(historyTitle)
+          // insert them into the h2 div element
+          document.querySelector("h2").innerHTML = historyTitle;
         }
       }
     })
