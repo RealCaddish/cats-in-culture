@@ -31,7 +31,7 @@
   tiles.addTo(map);
 
 
-  const slide = 9;
+  const slide = 18;
 
   // // new function - make slide
   makeSlide(slide)
