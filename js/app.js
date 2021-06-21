@@ -31,7 +31,7 @@
   tiles.addTo(map);
 
 
-  const slide= 7;
+  const slide= 2;
 
   // // new function - make slide
   makeSlide(slide)
@@ -186,8 +186,8 @@
           // insert them into the h2 div element
           document.querySelector("h2").innerHTML = historyTitle;
 
-          // testing how to add description text to modal content 
-          document.querySelector("modal-content") = historyText;
+          // // testing how to add description text to modal content 
+          // document.querySelector("modal-content") = historyText;
         }
       }
     })

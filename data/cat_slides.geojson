@@ -20,10 +20,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          21.443,
-          35.852
-        ]
+        "coordinates": [21.443, 35.852]
       }
     },
     {
@@ -31,17 +28,14 @@
       "properties": {
         "Slide": 2,
         "Title": "Felis Lybica ",
-        "Description": "Our journey begins with the verified precursor species of Felis catus known as Felis lybica, otherwise known as the African wildcat. Studies in the taxonomic literature were controversial about who exactly was the ancestral progenitor to Felis catus. However, in 2007, geneticists published a highly-praised genetic assessment of 979 domestic and wild cats. Their analysis revealed that domestic cats, from Europe, the Near East, and Asia, all derive from one of two genetic subtypes of Felis lybica – one from Turkey, the other from Egypt. Scholars are still unsure whether these populations became domesticated separately and later interbred, or if one became domesticated and later interbred with another population. Regardless, evidence of Felis catus’ ancestral lineage has been confirmed and we can readily trace its lineage across continents to Felis lybica. Let’s move on to a cultural history of this development from Felis Lybica to Felis catus over time. ",
+        "Description": "Our journey begins with the verified precursor species of Felis catus known as Felis lybica, otherwise known as the African wildcat. Studies in the taxonomic literature were controversial about who exactly was the ancestral progenitor to Felis catus. However, in 2007, geneticists published a highly-praised genetic assessment of 979 domestic and wild cats. Their analysis revealed that domestic cats, from Europe, the Near East, and Asia, all derive from one of two genetic subtypes of Felis lybica – one from Turkey, the other from Egypt. <img src=../images/felisLybica.jpg alt=FelisLybica>Scholars are still unsure whether these populations became domesticated separately and later interbred, or if one became domesticated and later interbred with another population. Regardless, evidence of Felis catus’ ancestral lineage has been confirmed and we can readily trace its lineage across continents to Felis lybica. Let’s move on to a cultural history of this development from Felis Lybica to Felis catus over time. ",
         "Lat": 9.058,
         "Lon": 22.629,
         "Zoom": "3.5"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          22.629,
-          9.058
-        ]
+        "coordinates": [22.629, 9.058]
       }
     },
     {
@@ -56,10 +50,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          39.24097,
-          33.76043
-        ]
+        "coordinates": [39.24097, 33.76043]
       }
     },
     {
@@ -74,10 +65,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          39.24097,
-          33.76043
-        ]
+        "coordinates": [39.24097, 33.76043]
       }
     },
     {
@@ -92,10 +80,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          39.24097,
-          33.76043
-        ]
+        "coordinates": [39.24097, 33.76043]
       }
     },
     {
@@ -110,10 +95,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          39.24097,
-          33.76043
-        ]
+        "coordinates": [39.24097, 33.76043]
       }
     },
     {
@@ -128,10 +110,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          31.17706,
-          29.80204
-        ]
+        "coordinates": [31.17706, 29.80204]
       }
     },
     {
@@ -146,10 +125,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          31.17706,
-          29.80204
-        ]
+        "coordinates": [31.17706, 29.80204]
       }
     },
     {
@@ -164,10 +140,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          31.17706,
-          29.80204
-        ]
+        "coordinates": [31.17706, 29.80204]
       }
     },
     {
@@ -182,10 +155,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          31.17706,
-          29.80204
-        ]
+        "coordinates": [31.17706, 29.80204]
       }
     },
     {
@@ -200,10 +170,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          23.72828,
-          37.96109
-        ]
+        "coordinates": [23.72828, 37.96109]
       }
     },
     {
@@ -218,10 +185,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          35.39576,
-          33.72389
-        ]
+        "coordinates": [35.39576, 33.72389]
       }
     },
     {
@@ -236,10 +200,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          12.47828,
-          41.80367
-        ]
+        "coordinates": [12.47828, 41.80367]
       }
     },
     {
@@ -254,10 +215,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          12.47828,
-          41.80367
-        ]
+        "coordinates": [12.47828, 41.80367]
       }
     },
     {
@@ -272,10 +230,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          12.47828,
-          41.80367
-        ]
+        "coordinates": [12.47828, 41.80367]
       }
     },
     {
@@ -290,10 +245,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          12.47828,
-          41.80367
-        ]
+        "coordinates": [12.47828, 41.80367]
       }
     },
     {
@@ -308,10 +260,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          10.69849,
-          48.57443
-        ]
+        "coordinates": [10.69849, 48.57443]
       }
     },
     {
@@ -326,10 +275,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          10.69849,
-          48.57443
-        ]
+        "coordinates": [10.69849, 48.57443]
       }
     },
     {
@@ -344,10 +290,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          39.72437,
-          24.40664
-        ]
+        "coordinates": [39.72437, 24.40664]
       }
     },
     {
@@ -362,10 +305,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          78.98951,
-          25.56177
-        ]
+        "coordinates": [78.98951, 25.56177]
       }
     },
     {
@@ -380,10 +320,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          139.41431,
-          36.94946
-        ]
+        "coordinates": [139.41431, 36.94946]
       }
     },
     {
@@ -398,10 +335,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          7.68824,
-          48.51624
-        ]
+        "coordinates": [7.68824, 48.51624]
       }
     },
     {
@@ -416,10 +350,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          7.68824,
-          48.51624
-        ]
+        "coordinates": [7.68824, 48.51624]
       }
     },
     {
@@ -434,10 +365,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          -43.94751,
-          30.3724
-        ]
+        "coordinates": [-43.94751, 30.3724]
       }
     },
     {
@@ -452,10 +380,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          151.03785,
-          -26.03753
-        ]
+        "coordinates": [151.03785, -26.03753]
       }
     }
   ]
