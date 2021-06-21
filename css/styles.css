@@ -72,9 +72,10 @@ h3 {
 }
 
 .col-sm-4 {
-
-  background-image: url(../images/caddish.jpg);
-  background-size: cover;;
+  background-color:rgb(163, 140, 104);
+  
+  /* background-image: url(../images/caddish.jpg);
+  background-size: cover;; */
 }
 
 
@@ -111,4 +112,14 @@ h3 {
   url(../images/catbuttonforward.jpg);
   background-size:cover;
   border-radius: 50%;
+}
+
+.btn-modal {
+  background-color: blue;
+  border-radius: 50%;
+
+}
+
+.modal-content {
+  font-family: 'Courier New', Courier, monospace;
 }
