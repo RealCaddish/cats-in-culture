@@ -33,16 +33,22 @@
 
   let slide= 1;
   let numOfSlides
+  let territoriesGeoJson
+  let catSitesGeoJson 
 
   // // new function - make slide
   makeSlide(slide)
 
   function makeSlide(slideNum) {
+    if (map.hasLayer(territoriesGeoJson) && map.hasLayer(catSitesGeoJson)) {
+      map.removeLayer(territoriesGeoJson)
+      map.removeLayer(catSitesGeoJson)
+    }
     // data call for territories polygons 
     const ter = $.getJSON("../data/territories_joined2.json",
       function (data) {
         
-        L.geoJson(data, {
+        territoriesGeoJson = L.geoJson(data, {
           filter: function (feature) {
             if (slideNum == feature.properties.Slide_number) {
               return feature
@@ -154,7 +160,7 @@
         fillOpacity: 0.8
       };
       // adding data as points to Leaflet map
-      L.geoJson(data, {
+      catSitesGeoJson = L.geoJson(data, {
         filter: function (feature) {
           if (slideNum == feature.properties.Slide_ID) {
             return feature
