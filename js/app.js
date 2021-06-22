@@ -31,7 +31,8 @@
   tiles.addTo(map);
 
 
-  const slide= 5;
+  let slide= 1;
+  let numOfSlides
 
   // // new function - make slide
   makeSlide(slide)
@@ -40,7 +41,7 @@
     // data call for territories polygons 
     const ter = $.getJSON("../data/territories_joined2.json",
       function (data) {
-
+        
         L.geoJson(data, {
           filter: function (feature) {
             if (slideNum == feature.properties.Slide_number) {
@@ -166,7 +167,7 @@
     })
 
     $.getJSON("../data/cat_slides.geojson", function (data) {
-
+      numOfSlides = data.features.length
       for (const x of data.features) {
         if (slideNum == x.properties.Slide) {
           const zoom = x.properties.Zoom // zoom function dynamically updates scale based on this value
@@ -192,4 +193,20 @@
       }
     })
   }
+
+  const forward = document.querySelector("#forward")
+  const backward = document.querySelector("#backward")
+
+  forward.addEventListener('click', function() {
+    if (slide < numOfSlides) {
+      slide++
+      makeSlide(slide)
+    }
+  })
+  backward.addEventListener('click', function() {
+    if (slide > 1) {
+      slide--
+      makeSlide(slide)
+    }
+  })
 })();
