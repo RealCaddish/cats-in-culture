@@ -35,20 +35,36 @@
   let numOfSlides
   let territoriesGeoJson
   let catSitesGeoJson 
+  let territoriesData
+  let catSitesData
 
-  // // new function - make slide
-  makeSlide(slide)
+// get data once
+
+// data call for territories polygons 
+const ter = $.getJSON("../data/territories_joined2.json",
+function (data) { 
+  territoriesData = data
+})
+
+// data call for territories polygons 
+$.when(ter).then(function () {
+  $.getJSON("../data/cat_sites.geojson",
+    function (data) { 
+      catSitesData = data
+      // // new function - make slide
+      makeSlide(slide)
+    })
+  })
+
+  
 
   function makeSlide(slideNum) {
     if (map.hasLayer(territoriesGeoJson) && map.hasLayer(catSitesGeoJson)) {
       map.removeLayer(territoriesGeoJson)
       map.removeLayer(catSitesGeoJson)
     }
-    // data call for territories polygons 
-    const ter = $.getJSON("../data/territories_joined2.json",
-      function (data) {
-        
-        territoriesGeoJson = L.geoJson(data, {
+
+        territoriesGeoJson = L.geoJson(territoriesData, {
           filter: function (feature) {
             if (slideNum == feature.properties.Slide_number) {
               return feature
@@ -144,10 +160,6 @@
             }
           }
         }).addTo(map)
-      });
-
-    // data call for the archaeological sites 
-    $.getJSON("../data/cat_sites.geojson", function (data) {
 
       // access the features 
 
@@ -160,7 +172,7 @@
         fillOpacity: 0.8
       };
       // adding data as points to Leaflet map
-      catSitesGeoJson = L.geoJson(data, {
+      catSitesGeoJson = L.geoJson(catSitesData, {
         filter: function (feature) {
           if (slideNum == feature.properties.Slide_ID) {
             console.log(slideNum)
@@ -178,7 +190,7 @@
           layer.bindPopup(popup)
         }
       }).addTo(map)
-    })
+    
 
     $.getJSON("../data/cat_slides.geojson", function (data) {
       numOfSlides = data.features.length
