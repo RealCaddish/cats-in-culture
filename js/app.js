@@ -51,10 +51,41 @@ $.when(ter).then(function () {
   $.getJSON("../data/cat_sites.geojson",
     function (data) { 
       catSitesData = data
+      makeModals(catSitesData) 
       // // new function - make slide
       makeSlide(slide)
     })
   })
+
+  function makeModals(slides) {
+    const n = slides.features
+    const z = document.querySelector('#modalZone')
+    let i = 0
+    for (s of n) {
+      const p = s.properties
+      p.modalID =`m${i}`
+      console.log(z)
+      let m = `<!-- Modal -->
+      <div class="modal fade" id="m${i}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">${p.ModalTitle}</h5>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ${p.Description}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>`
+      z.innerHTML += m
+      i++
+    }
+  }
 
   
 
@@ -186,7 +217,12 @@ $.when(ter).then(function () {
           const props = feature.properties
           console.log(props["Image File Path"])
           const popup = `<h2>${props["Site Name"]}</h2>
-                         <img src='${props["Image File Path"]}' width='100%'>`
+                         <img src='${props["Image File Path"]}' width='100%'><br>
+                         <!-- Button trigger modal -->
+                          <a href='#' data-toggle="modal" data-target="#${props["modalID"]}">
+                            Launch demo modal
+                          </a>
+                         ${props["modalID"]}`
           layer.bindPopup(popup)
         }
       }).addTo(map)
