@@ -31,7 +31,7 @@
   tiles.addTo(map);
 
 
-  const slide= 2;
+  const slide= 5;
 
   // // new function - make slide
   makeSlide(slide)
@@ -178,13 +178,13 @@
           const historyText = x.properties.Description;
 
           // insert them into the historyBox div element
-          document.querySelector(".historyBox").innerHTML = historyText;
+          document.querySelector("#historyBox").innerHTML = historyText;
 
           // grab the Title values 
           const historyTitle = x.properties.Title;
 
           // insert them into the h2 div element
-          document.querySelector("h2").innerHTML = historyTitle;
+          document.querySelector("#historyTitle").innerHTML = historyTitle;
 
           // // testing how to add description text to modal content 
           // document.querySelector("modal-content") = historyText;
