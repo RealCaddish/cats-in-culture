@@ -169,6 +169,13 @@
         },
         pointToLayer: function (feature, latlng) {
           return L.circleMarker(latlng, archSitesStyle); // creating layer with circleMarkers and adding custom options
+        },
+        onEachFeature: function (feature, layer) {
+          const props = feature.properties
+          console.log(props["Image File Path"])
+          const popup = `<h2>${props["Site Name"]}</h2>
+                         <img src='${props["Image File Path"]}' width='100%'>`
+          layer.bindPopup(popup)
         }
       }).addTo(map)
     })
