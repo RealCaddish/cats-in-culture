@@ -163,6 +163,7 @@
       catSitesGeoJson = L.geoJson(data, {
         filter: function (feature) {
           if (slideNum == feature.properties.Slide_ID) {
+            console.log(slideNum)
             return feature
           }
         },
@@ -177,7 +178,7 @@
       for (const x of data.features) {
         if (slideNum == x.properties.Slide) {
           const zoom = x.properties.Zoom // zoom function dynamically updates scale based on this value
-          console.log(x.properties)
+          // console.log(x.properties)
           console.log([x.properties.Lat, x.properties.Lon])
           map.setView([x.properties.Lat, x.properties.Lon], zoom);
 
