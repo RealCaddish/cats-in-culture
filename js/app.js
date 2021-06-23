@@ -1,5 +1,14 @@
 (function () {
 
+
+  // Splash screen timeout controller 
+  const splash = document.querySelector('.splash');
+  document.addEventListener('DOMContentLoaded', (e) => {
+    setTimeout(() => {
+      splash.classList.add('display-none');
+    }, 1000);
+  });
+
   // map options
   const options = {
     center: [35.852, 21.443],
