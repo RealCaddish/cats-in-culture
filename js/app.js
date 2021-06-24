@@ -6,7 +6,7 @@
   document.addEventListener('DOMContentLoaded', (e) => {
     setTimeout(() => {
       splash.classList.add('display-none');
-    }, 1000);
+    }, 4000);
   });
 
   // map options
@@ -95,7 +95,6 @@
       i++
     }
   }
-
 
 
   function makeSlide(slideNum) {
