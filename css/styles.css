@@ -199,3 +199,16 @@ img_txt {
   opacity: 0;
   animation: fadeIn 1s ease-in forwards
 }
+
+img {
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
+  border: 1.5px solid black
+}
+
+img_txt {
+  font-style: italic;
+  font-size: smaller;
+}
+

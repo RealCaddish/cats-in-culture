@@ -37,10 +37,17 @@
         "Lon": 33.1337,
         "ModalTitle": "Klimonas, Cyprus",
         "Description": "Klimonas is the earliest known Pre-Pottery Neolithic A (PPNA) site in Europe with similar evidence of early dog and cat domestication. Researchers from the Museum National d’Histoire Naturelle, and the University of Toulouse II-Le Mirail who directed the excavations at Klimonas have argued the date of the site to be between 11,000 to 10,400 BP. Stone tools, weapons, and buildings were found at Klimonas including evidence of wild boar hunting and early cultivation of a primitive wheat brought from the mainland. The findings at Klimonas provide evidence of sea-faring capabilities as well as participation in mobile, complex economic systems. ",
+
         "Image File Path": "images\/klimonas.jpg",
         "Image File Path 2": null,
         "Date": "9,000 - 8,400 BCE",
         "Slide_ID": 2
+
+        "Image File Path": "images/klimonas.jpg",
+        "Image File Path 2": null,
+        "Date": "9,000 - 8,400 BCE",
+        "Slide_ID": 5
+
       },
       "geometry": {
         "type": "Point",
