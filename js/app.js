@@ -6,16 +6,16 @@
   document.addEventListener('DOMContentLoaded', (e) => {
     setTimeout(() => {
       splash.classList.add('display-none');
-    }, 4000);
+    }, 2000);
   });
 
   // map options
   const options = {
     center: [35.852, 21.443],
-    scrollWheelZoom: true,
     zoomSnap: .1,
     dragging: true,
-    zoomControl: false
+    zoomControl: false,
+    scrollWheelZoom: true,
   };
 
   // Leaflet map creation
@@ -25,12 +25,8 @@
   map.createPane("polygonsPane");
   map.createPane("pointsPane;")
 
-  // replace zoom control to bottom left 
-  L.control.zoom({
-    position: 'bottomleft'
-  }).addTo(map)
-
-
+  // add map scale bar 
+  L.control.scale({ position: 'bottomright' }).addTo(map)
 
   // add basemap tiles layer 
   const tiles = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
@@ -112,11 +108,28 @@
       style: function (feature) {
         const props = colorTerritories(feature.properties.NAME)
         return props
+      },
+      onEachFeature: function (feature, layer) {
+        layer.on('mouseover', function () {
+          layer.setStyle({
+            color: 'yellow',
+            weight: 6,
+          });
+        });
+        layer.on('mouseout', function () {
+          layer.setStyle({
+            color: props,
+            weight: 1
+          })
+        });
+
+        const props = feature.properties
+        const tooltip = `<h2><u>${props["NAME"]} </h2>`
+        layer.bindTooltip(tooltip)
       }
     }).addTo(map)
 
     // access the features 
-
     const archSitesStyle = {
       radius: 8,
       fillColor: "#ff7800",
@@ -125,6 +138,7 @@
       opacity: 1,
       fillOpacity: 0.8
     };
+
     // adding data as points to Leaflet map
     catSitesGeoJson = L.geoJson(catSitesData, {
       filter: function (feature) {
@@ -139,11 +153,11 @@
       onEachFeature: function (feature, layer) {
         const props = feature.properties
         console.log(props["Image File Path"])
-        const popup = `<h2>${props["Site Name"]}</h2>
+        const popup = `<h2><u>${props["Site Name"]}</h2>
                          <img src='${props["Image File Path"]}' width='100%'><br>
                          <!-- Button trigger modal -->
                           <a href='#' data-toggle="modal" data-target="#${props["modalID"]}">
-                            Launch demo modal
+                            Click to learn about ${props["Site Name"]}!
                           </a>
                          ${props["modalID"]}`
         layer.bindPopup(popup)
