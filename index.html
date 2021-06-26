@@ -12,42 +12,60 @@
     crossorigin="" />
   <!-- Load css file -->
   <link href="css/styles.css" rel="stylesheet" />
-  <!-- Rubik Google Font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-  <!--Work Sans Google Font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+  <!--Load archeologicaps font -->
+  <!-- <link rel="preload" href="Archeologicaps.woff2" as="font" type="font/woff2" crossorigin> -->
 </head>
 
 <body>
 
-  <div class="splash">
+   <div class="splash">
     <h4 class="fade-in"> Welcome to the World of Cats </h4>
 
     <h4 class="fade-in"> A Journey of Archaeological Catmospheres and <br> Cattitudes between Feline and Man
     </h4>
     <img src="images/caddish.jpg">
-  </div>
+  </div> 
 
-  <div class="container-fluid my_container">
-    <div class="row my-custom-row">
-      <div class="col-md-8">
-        <div id="map">
-          <!-- <div class="p-2 border bg-light">Col One
-          </div> -->
+
+  <!-- <div class="container-fluid my_container ">
+    <div class="row my_row">
+      <div class="col-md-8 bg-dark map_column">
+        Map Column
+        <div id="map" class='viewport-twothirds viewport-full-ml'>
         </div>
       </div>
-      <div class="col-md-4 map_column text-center">
-        <h1> Cats in Culture</h1>
-        <div class="p-2 m-2 border description_box">
+      <div class="col-md-4  bg-info text_column">
+        <div class="p-2 m-2 border bg-light">
           <h2 id='historyTitle'> Title </h2>
+          <div id='historyBox' class=" bg-white round px12 py12 m-2 relative border overflow-auto">
+          </div>
           <button type="button" class='btn btn-primary' id='backward'> Backward </button>
           <button type="button" class='btn btn-secondary' id='forward'> Forward </button>
-          <div id='historyBox' class="  round px12 py12 m-2  p-2 relative border text-left overflow-auto">
+        </div>
+      </div>
+    </div> -->
+
+
+
+
+  <div class="container-fluid container-primary">
+    <div class="row my-custom-row">
+      <div class="col-md-8">
+        <h1> Cats in Culture</h1>
+        <div id="map" class='viewport-twothirds viewport-full-ml'>
+          <div class="p-2 border bg-light">Col One
           </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <div class="p-2 m-2 border bg-info">
+          <h2 id='historyTitle'> Title </h2>
+          <div id='historyBox' class=" bg-light round px12 py12 m-2 relative border overflow-auto">
+          </div>
+          <button type="button" class='btn btn-primary' id='backward'> Backward </button>
+          <button type="button" class='btn btn-secondary' id='forward'> Forward </button>
+
         </div>
       </div>
       <h2 class='text-bold mb12 w180'></h2>
