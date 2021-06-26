@@ -106,8 +106,15 @@ h5 {
   background-color: #DEDDDB;
 }
 
-.img {
+p img {
   border: 2px solid black;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 img_txt {
@@ -150,7 +157,7 @@ img_txt {
   background-size: 94%;
   ;
   border-radius: 50%;
-  
+
 }
 
 .btn-modal {
