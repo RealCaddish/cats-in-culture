@@ -50,6 +50,7 @@
         "Slide": 3,
         "Title": "The Fertile Crescent ",
         "Description": "<p>The story of human involvement with the earliest felids begins in the Fertile Crescent, a region demarcated by modern countries spanning regions of Iraq, Syria, Lebanon, Palestine, Jordan, Israel, Egypt, and fringe areas of Turkey and Iran. The region of the Fertile Crescent is widely attributed to the earliest evidence of Neolithic farming settlements (circa 9,000 BCE) that began to dot the various river valleys such as the Tigris and Euphrates in the north, as well as a large portion of the Nile River valley to the south. Farmers in the Fertile Crescent particularly focused on cereals, legumes such as peas and lentils, as well as animal husbandry with sheep, pigs, goats, and cattle. \n\n     The region is often referred to as one of the ‘cradles of civilization,’ because a shift from mobile, hunter-gatherer societies to sedentary, agrarian ones became a defining mechanism of Homo sapiens’ earliest forms of societal and technological advancements. <img src=images/fertileCrescent.jpg alt=The Fertile Crescent Image style=width:80% height:80%> <br> <img_txt> Illustration of the Fertile Crescent by Stefano Bianchetti in <a href=https://www.nationalgeographic.org/encyclopedia/fertile-crescent/>National Geographic's Encyclopedia</a></img_txt> <br> <p> By the 3rd Millennium BCE, the advent of agriculture in the region brought about developments in irrigation, writing, the wheel, and glass, as well as new cultural phenomena such as libraries, forms of organized law, and construction activities. \n   Farmers soon realized that a positive aspect to their practice resulted in food surpluses. In short order, farmers constructed granaries to store their produce and they soon became a major characteristic of farming villages throughout the region.  \n\n <br> <p> As farming reshaped Homo sapiens’ social behaviors and practices, so too did it reshape those of the local wildlife. As granaries were filled at the end of each harvest season, rodents and insects soon wrought havoc on the bounty. Fortunately, the farmers overseeing granaries soon realized that cats (particularly Felis lybica) were particularly useful in controlling these varmint and insect populations, and naturally participated in a mutually beneficial relationship. Here, we have the earliest forms of cat ‘taming’ in which local populations of Felis lybica lived alongside humans where they could enjoy tasty mammalian treats while humans rested easy knowing their granaries weren’t overrun with destructive and invasive species. \n",
+
         "Lat": 33.760427,
         "Lon": 39.240971,
         "Zoom": "6"
@@ -66,6 +67,23 @@
       "type": "Feature",
       "properties": {
         "Slide": 4,
+
+
+        "Title": "The Fertile Crescent II",
+        "Description": "As farming reshaped Homo sapiens’ behaviors and practices, so too did it reshape those of the local wildlife. As granaries were filled at the end of each harvest, rodents and insects soon wrought havoc on the sustenance. Fortunately, the farmers overseeing granaries soon realized that cats (particularly Felis lybica) were particularly useful in controlling these varmint and insect populations, and soon participated in a commensal relationship where both parties benefitted. <img src=../images/FertileCrescent2.jpg alt= Fertile Crescent Relief style=width:550px;height:400px> <img_txt> Relief of Ashurbanipal on the lion hunt, 645 - 640 BCE. </img_txt> <br> Here, we have the earliest forms of cat ‘taming’ in which local populations of Felis lybica lived alongside humans where they could enjoy a tasty mammalian meal while humans could rest easy knowing their granaries weren’t overrun with varmints. ",
+        "Lat": 33.760427,
+        "Lon": 39.240971,
+        "Zoom": "6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [39.24097, 33.76043]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Slide": 5,
         "Title": "Quick Recap ",
         "Description": "<p>Before we move any further in our journey, let’s take a moment to view this early dynamic between human and cat. It should be noted that this process was not particularly linear, and there are always exceptions to the archaeological record. Although the Fertile Crescent is an excellent starting point for examining this relationship, other, earlier examples of humans living alongside cats have been discovered in other regions in the world. <br> <img src=images/catOnBoat.jpg alt= Cats on a boat style=width:80% height:80%> <br><img_txt> Cats in Boat by <a href=https://pixels.com/featured/1-cats-in-boat-valletta-malta-gillian-short.html> Gillian Short </a> <br> <p>Even though Cyprus is often ‘roped in’ to the region of the Fertile Crescent, there is no doubt among archaeologists that Felis lybica was intentionally brought to the island for practices outside of agriculture during the Neolithic period. Click on the sites above to view more precise information about how these sites are some of our earliest examples of cats and humans living commensally. ",
         "Lat": 33.760427,
