@@ -158,8 +158,7 @@
                          <!-- Button trigger modal -->
                           <a href='#' data-toggle="modal" data-target="#${props["modalID"]}">
                             Click to learn about ${props["Site Name"]}!
-                          </a>
-                         ${props["modalID"]}`
+                          </a>`
         layer.bindPopup(popup)
       }
     }).addTo(map)
