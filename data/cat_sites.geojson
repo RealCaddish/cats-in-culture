@@ -41,6 +41,12 @@
         "Image File Path 2": null,
         "Date": "9,000 - 8,400 BCE",
         "Slide_ID": 2
+
+        "Image File Path": "images/klimonas.jpg",
+        "Image File Path 2": null,
+        "Date": "9,000 - 8,400 BCE",
+        "Slide_ID": 5
+
       },
       "geometry": {
         "type": "Point",

@@ -36,12 +36,14 @@
   tiles.addTo(map);
 
 
+
   let slide = 1;
   let numOfSlides
   let territoriesGeoJson
   let catSitesGeoJson
   let territoriesData
   let catSitesData
+
 
   // get data once
 
