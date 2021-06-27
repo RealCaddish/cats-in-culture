@@ -161,7 +161,7 @@
     }).addTo(map)
 
 
-    $.getJSON("../data/cat_slides.geojson", function (data) {
+    $.getJSON("https://realcaddish.github.io/cats-in-culture/data/cat_slides.geojson", function (data) {
       numOfSlides = data.features.length
       for (const x of data.features) {
         if (slideNum == x.properties.Slide) {
