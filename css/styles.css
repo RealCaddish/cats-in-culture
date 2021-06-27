@@ -23,6 +23,7 @@ p {
 
 .map_column {
   font-size: large;
+  padding-bottom: 10px;
 }
 
 .my_row {
@@ -109,7 +110,7 @@ h5 {
   position: fixed;
   background-color: rgb(32, 32, 63);
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 
 .description_box {
