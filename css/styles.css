@@ -50,10 +50,6 @@ p {
 h1 {
   font-family: 'catFont';
   text-align: center;
-  /* position: fixed;
-  z-index: 650;
-  top: 10px;
-  left: 15px; */
   padding: 8px 15px;
   margin: 0;
   color: #000000cc;

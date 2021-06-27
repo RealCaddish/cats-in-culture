@@ -6,7 +6,7 @@
   document.addEventListener('DOMContentLoaded', (e) => {
     setTimeout(() => {
       splash.classList.add('display-none');
-    }, 2000);
+    }, 2500);
   });
 
   // map options
@@ -161,7 +161,7 @@
     }).addTo(map)
 
 
-    $.getJSON("https://realcaddish.github.io/cats-in-culture/data/cat_slides.geojson", function (data) {
+    $.getJSON("../data/cat_slides.geojson", function (data) {
       numOfSlides = data.features.length
       for (const x of data.features) {
         if (slideNum == x.properties.Slide) {
