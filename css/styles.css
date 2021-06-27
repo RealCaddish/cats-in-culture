@@ -115,7 +115,7 @@ p img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 100%;
 }
 
 img_txt {
@@ -214,6 +214,25 @@ img_txt {
   animation: fadeIn 1s ease-in forwards
 }
 
+
+/* Small devices (mobile phones 360 pixels and up) */
+@media (min-width: 360px) {
+  #map {
+    border: 3px solid black;
+    height: 60vh;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+
+  }
+
+  h1 {
+    display: flex;
+    padding-top: 10px;
+    font-size: 50px;
+  }
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #map {
@@ -233,23 +252,6 @@ img_txt {
 
 }
 
-@media (min-width: 360px) {
-  #map {
-    border: 3px solid black;
-    height: 60vh;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-
-  }
-
-  h1 {
-    display: flex;
-    padding-top: 10px;
-    font-size: 50px;
-  }
-}
-
 @media (min-width: 992px) {
   #map {
     border: 3px solid black;
@@ -264,6 +266,8 @@ img_txt {
   }
 }
 
+
+/* Large screen devices (1200 pixels and up) */
 @media (min-width: 1200px) {
 
   #map {
