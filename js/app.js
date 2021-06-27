@@ -53,7 +53,7 @@
 
   // data call for territories polygons 
   $.when(ter).then(function () {
-    $.getJSON("data/cat_sites.geojson",
+    $.getJSON("https://realcaddish.github.io/cats-in-culture/data/cat_sites.geojson",
       function (data) {
         catSitesData = data
         makeModals(catSitesData)
@@ -161,7 +161,7 @@
     }).addTo(map)
 
 
-    $.getJSON("../data/cat_slides.geojson", function (data) {
+    $.getJSON("https://realcaddish.github.io/cats-in-culture/data/cat_slides.geojson", function (data) {
       numOfSlides = data.features.length
       for (const x of data.features) {
         if (slideNum == x.properties.Slide) {
