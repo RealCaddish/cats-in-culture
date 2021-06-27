@@ -53,7 +53,7 @@
 
   // data call for territories polygons 
   $.when(ter).then(function () {
-    $.getJSON("../data/cat_sites.geojson",
+    $.getJSON("data/cat_sites.geojson",
       function (data) {
         catSitesData = data
         makeModals(catSitesData)
