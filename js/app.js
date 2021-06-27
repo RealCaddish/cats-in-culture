@@ -117,10 +117,7 @@
           });
         });
         layer.on('mouseout', function () {
-          layer.setStyle({
-            color: props,
-            weight: 1
-          })
+          layer.setStyle(colorTerritories(feature.properties.NAME))
         });
 
         const props = feature.properties
