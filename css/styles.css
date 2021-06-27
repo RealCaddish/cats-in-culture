@@ -1,13 +1,22 @@
+a {
+  font-family: 'Rubik', cursive;
+  font-weight: 600;
+  color: #8C3211;
+
+}
+
 p {
   text-indent: 5%;
   font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  
 }
 
 
 
 .my_container {
   border: .5px solid;
-  background-color: #E8C6A1;
+  background-color: #E6E6DE;
   padding-top: 10px;
 
 }
@@ -104,7 +113,8 @@ h5 {
 }
 
 .description_box {
-  background-color: #DEDDDB;
+  background-color: #F2CEAE;
+  border-radius: 5%;
 }
 
 p img {
