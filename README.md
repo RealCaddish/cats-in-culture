@@ -66,11 +66,11 @@ The map will also have a title with two opposite images on either side of it in 
 
 
 ***Technology Stack*** 
--Programming Languages: HTML5, CSS, Javascript
--Javascript Libraries: Leaflet, Bootstrap 5, Omnivore or PapaParse, jQuery if things get hairy and I need something quick and intuitive 
--Data formats: CSVs (A and B), GeoJson, TopoJson
--Data processing: QGIS (convert csv to GeoJson), MapShaper for TopoJson creation for territorial polygons
--Other: MapBox for basemap creation (as well as area polygons too, Boyd?)
--Hosting platform: my GitHub portfolio page 
+- Programming Languages: HTML5, CSS, Javascript
+- Javascript Libraries: Leaflet, Bootstrap 5, Omnivore or PapaParse, jQuery if things get hairy and I need something quick and intuitive 
+- Data formats: CSVs (A and B), GeoJson, TopoJson
+- Data processing: QGIS (convert csv to GeoJson), MapShaper for TopoJson creation for territorial polygons
+- Other: MapBox for basemap creation (as well as area polygons too, Boyd?)
+- Hosting platform: my GitHub portfolio page 
 
 
