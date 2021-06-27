@@ -46,7 +46,7 @@
   // get data once
 
   // data call for territories polygons 
-  const ter = $.getJSON("../data/territories_joined2.json",
+  const ter = $.getJSON("https://realcaddish.github.io/cats-in-culture/data/territories_joined2.json",
     function (data) {
       territoriesData = data
     })
