@@ -16,7 +16,7 @@ p {
 
 .my_container {
   border: .5px solid;
-  background-color: #E6E6DE;
+  background-color: #ffffff;
   padding-top: 10px;
 
 }
@@ -55,7 +55,7 @@ h1 {
   color: #000000cc;
   text-shadow: #fff3f3;
   font-size: 4em;
-  background: rgba(187, 183, 183, 0.795);
+  background: #f7dfdd;
   border-radius: 5px;
 }
 
@@ -110,8 +110,9 @@ h5 {
 }
 
 .description_box {
-  background-color: #F2CEAE;
+  background-color: #f7dfdd;
   border-radius: 5%;
+
 }
 
 p img {
@@ -235,8 +236,12 @@ img_txt {
 
   h1 {
     display: flex;
-    padding-top: 10px;
-    font-size: 50px;
+    padding-top: 5px;
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
   }
 }
 
